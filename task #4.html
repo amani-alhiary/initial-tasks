@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <a href="https://www.w3schools.com/html/">
+      <div class="column">
+        <img src="images/html.png" target="_self" alt="html" style="width:50%">
+    </a>
+  </div>
+  <a href="https://www.w3schools.com/css/">
+    <div class="column">
+      <img src="images/css.png" target="_self" alt="css" style="width:25%; margin-top: 90px;">
+  </a>
+  </div>
+  <a href="https://www.w3schools.com/bootstrap/default.asp">
+    <div class="column">
+      <img src="images/bootstrap.png" target="_self" alt="bootstrap" style="width:10%; margin-top: 200px;">
+  </a>
+  </div>
